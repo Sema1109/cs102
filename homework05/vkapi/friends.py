@@ -2,7 +2,7 @@ import dataclasses
 import math
 import time
 
-importtyping as tp
+import typing as tp
 
 from vkapi import config, exceptions, session  # type: ignore
 
