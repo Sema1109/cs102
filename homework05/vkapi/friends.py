@@ -1,10 +1,7 @@
-
-
-
 import dataclasses
 import math
 import time
-import typing as tp
+importtyping as tp
 
 from vkapi import config, exceptions, session  # type: ignore
 
@@ -111,8 +108,6 @@ def get_mutual(
 
 if __name__ == "__main__":
     friends = get_friends(user_id=466736313).items
-
     print(friends)
     print(len(friends))
-    print(get_mutual(source_uid =466736313, target_uids=[338503155]))
-    
+    print(get_mutual(source_uid =466736313, target_uids=[338503155]))  
