@@ -76,7 +76,5 @@ def describe_communities(
 
 if __name__ == "__main__":
     net = ego_network()
-    
     print(net)        
     plot_ego_network(net)
-    
