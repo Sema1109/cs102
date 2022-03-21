@@ -1,6 +1,7 @@
 import dataclasses
 import math
 import time
+
 importtyping as tp
 
 from vkapi import config, exceptions, session  # type: ignore
