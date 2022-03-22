@@ -2,14 +2,8 @@ import textwrap
 import time
 import typing as tp
 from string import Template
-
 import pandas as pd
 from pandas import json_normalize
-
-# from homework05.vkapi import config
-# from homework05.vkapi.exceptions import APIError
-# from homework05.vkapi.session import Session
-#
 from vkapi import config
 from vkapi.exceptions import APIError
 from vkapi.session import Session
@@ -90,9 +84,3 @@ def get_wall_execute(
             pass
     # return all_wall_posts
     return json_normalize(all_wall_posts)
-
-
-if __name__ == "__main__":
-    wall = get_wall_execute(owner_id=466736313, domain="divanypsixolog", count=1)
-
-    print(wall)
