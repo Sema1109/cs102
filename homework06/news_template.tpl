@@ -31,6 +31,7 @@
             <tfoot class="full-width">
                 <tr>
                     <th colspan="7">
+                        <a href="/classify" class="ui right floated small primary button">Recommendations</a>
                         <a href="/update" class="ui right floated small primary button">I Wanna more Hacker News!</a>
                     </th>
                 </tr>
