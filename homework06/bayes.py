@@ -62,11 +62,12 @@ class NaiveBayesClassifier:
         pr = self.predict(X_test)
         return accuracy_score(pr, y_test)
 
+
 def clean(s: str) -> str:
-        """
-        Clean string from the punctuations symbols
-        :param s: string to clean
-        :return: cleaned string
-        """
-        translator = str.maketrans("", "", string.punctuation)
-        return s.translate(translator)
+    """
+    Clean string from the punctuations symbols
+    :param s: string to clean
+    :return: cleaned string
+    """
+    translator = str.maketrans("", "", string.punctuation)
+    return s.translate(translator)
