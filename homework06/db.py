@@ -21,6 +21,7 @@ class News(Base):  # type: ignore
 
 Base.metadata.create_all(bind=engine)
 
+
 def fill_db(n_pages=10):
     s = session()
     news_list = get_news("https://news.ycombinator.com/newest", n_pages)
