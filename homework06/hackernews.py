@@ -69,6 +69,7 @@ def classify_news():
     classified.extend([x for x in predict_db if x.label == "never"])
     return template("recs", rows=classified)
 
+
 @route("/recommendations")
 def recommendations():
     global classifier
